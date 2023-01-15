@@ -25,7 +25,7 @@ import play from '../../images/hero/sprite.svg';
 const Hero = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="home">
         <Сontext>
           <Title>Zack Snyder's Justice League</Title>
           <WrapperInfo>
@@ -46,7 +46,7 @@ const Hero = () => {
             of catastrophic proportions.
           </Text>
           <WrapperButton>
-            <Button type='button'>
+            <Button type="button">
               <svg width="14px" height="18px">
                 <use href={`${play}#play`}></use>
               </svg>

@@ -19,7 +19,7 @@ const TrendingTVShows = ({ children }) => {
 
   return (
     <MainDiv>
-      <WrapperTitel onClick={() => setShow(!show)}>
+      <WrapperTitel onClick={() => setShow(!show)} id="tv">
         <ListTitel>{children}</ListTitel>
       </WrapperTitel>
       {show ? (

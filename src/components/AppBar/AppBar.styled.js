@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const NavStyled = styled.nav``;
@@ -17,7 +17,7 @@ export const ItemNav = styled.li`
   position: relative;
 `;
 
-export const LinkItemNav = styled(NavLink)`
+export const LinkItemNav = styled.a`
   display: inline-flex;
 
   align-items: center;
@@ -33,7 +33,7 @@ export const LinkItemNav = styled(NavLink)`
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   opacity: 0.5;
-  &.active {
+  &:hover {
     opacity: 1;
     font-weight: 800;
     &::after {

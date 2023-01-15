@@ -25,7 +25,7 @@ const TrendingMovies = ({ children }) => {
 
   return (
     <>
-      <WrapperTitel onClick={() => setShow(!show)}>
+      <WrapperTitel onClick={() => setShow(!show)} id="movies">
         <ListTitel>{children}</ListTitel>
       </WrapperTitel>
       {show ? (

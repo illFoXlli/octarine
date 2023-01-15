@@ -3,6 +3,12 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  &#home {
+    padding-top: 100px;
+    margin-top: -100px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+  }
 `;
 export const Сontext = styled.div`
   background: #010101;

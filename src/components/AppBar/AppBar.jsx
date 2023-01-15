@@ -1,10 +1,10 @@
 import { ItemNav, LinkItemNav, ListNav, NavStyled } from './AppBar.styled';
 
-const navItems = [
-  { href: '/', text: 'Home', icon: null },
-  { href: '/tv', text: 'TV Shows', icon: null },
-  { href: '/movies', text: 'Movies', icon: null },
-  { href: '/series', text: 'Series', icon: null },
+export const navItems = [
+  { href: '#home', text: 'Home', icon: null, name: '#home' },
+  { href: '#tv', text: 'TV Shows', icon: null, name: '#tv' },
+  { href: '#movies', text: 'Movies', icon: null, name: '#movies' },
+  { href: '#series', text: 'Series', icon: null, name: '#series' },
 ];
 
 const AppBar = () => {
@@ -12,9 +12,9 @@ const AppBar = () => {
     <>
       <NavStyled>
         <ListNav>
-          {navItems.map(({ href, text }) => (
+          {navItems.map(({ href, text, name }) => (
             <ItemNav key={href}>
-              <LinkItemNav to={href} title={text}>
+              <LinkItemNav href={name} title={text}>
                 {text}
               </LinkItemNav>
             </ItemNav>

@@ -5,6 +5,12 @@ export const MainDiv = styled.div``;
 export const WrapperTitel = styled.div`
   margin-bottom: 40px;
   cursor: pointer;
+  &#tv {
+    padding-top: 100px;
+    margin-top: -100px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+  }
 `;
 
 export const List = styled.ul`

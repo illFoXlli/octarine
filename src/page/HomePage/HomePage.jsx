@@ -23,9 +23,8 @@ import TrendingMovies from 'components/TrendingMovies';
 const HomePage = () => {
   return (
     <>
+      <Header />
       <Container>
-        <Header />
-
         <Main>
           <SectionHero>
             <Hero />
@@ -50,8 +49,9 @@ const HomePage = () => {
             <RegistrationBaner />
           </SectionRegistrationBaner>
         </Main>
-        <SectionFooter><Footter/></SectionFooter>
-        
+        <SectionFooter>
+          <Footter />
+        </SectionFooter>
       </Container>
     </>
   );

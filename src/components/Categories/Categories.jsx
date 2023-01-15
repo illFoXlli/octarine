@@ -9,7 +9,7 @@ const Categories = ({ children }) => {
 
   return (
     <MainDiv>
-      <WrapperTitel onClick={() => setShow(!show)}>
+      <WrapperTitel onClick={() => setShow(!show)} id="series">
         <ListTitel>{children}</ListTitel>
       </WrapperTitel>
       {show ? (
